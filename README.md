@@ -3,7 +3,7 @@ PostgreSQL with astronomy extensions
 
 The following command will start a Postgres 14 deamon with the pg_sphere module installed:
 
-docker run --rm --name pg-docker -e POSTGRES_PASSWORD=<pass> -d -p 5432:5432 -v <path to store data locally>:/var/lib/postgresql/data astrodata/astro-psql:14
+```docker run --rm --name pg-docker -e POSTGRES_PASSWORD=<pass> -d -p 5432:5432 -v <path to store data locally>:/var/lib/postgresql/data astrodata/astro-psql:14```
 
 The database can be accessed via:
 

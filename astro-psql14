@@ -13,7 +13,7 @@ RUN apt-get update \
 		&& USE_PGXS=1 \
     && PG_CONFIG=/usr/bin/pg_config \
     && cd /root \
-		&& git clone --depth 1 https://github.com/d-i-an-a/pgsphere.git
+		&& git clone --depth 1 https://github.com/d-i-an-a/pgsphere.git \
 		&& cd pgsphere \
 		&& make \
 		&& make install \

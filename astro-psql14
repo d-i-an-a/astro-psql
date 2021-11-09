@@ -22,7 +22,7 @@ RUN apt-get update \
 && make \
 && make install \
 && rm -rf /root/pgsphere /root/pg_healpix \
-&& apt remove \
+&& apt remove -y \
 	make \
 	git \
 	gcc \

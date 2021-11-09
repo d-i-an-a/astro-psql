@@ -18,7 +18,7 @@ RUN apt-get update \
 		&& make \
 		&& make install \
     && cd /root \
-    && git clone --depth 1 https://github.com/d-i-an-a/pg_healpix.git
+    && git clone --depth 1 https://github.com/d-i-an-a/pg_healpix.git \
     && cd pg_healpix \
     && make \
     && make install 

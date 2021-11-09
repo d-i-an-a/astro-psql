@@ -15,8 +15,8 @@ RUN apt-get update \
     && cd /root \
 		&& git clone --depth 1 https://github.com/d-i-an-a/pgsphere.git \
 		&& cd pgsphere \
-		&& make \
-		&& make install \
+		&& make USE_PGXS=1 PG_CONFIG=/usr/bin/pg_config \
+		&& make USE_PGXS=1 PG_CONFIG=/usr/bin/pg_config install \
     && cd /root \
     && git clone --depth 1 https://github.com/d-i-an-a/pg_healpix.git \
     && cd pg_healpix \
